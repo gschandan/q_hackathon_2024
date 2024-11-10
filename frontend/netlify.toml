@@ -1,0 +1,9 @@
+[build]
+  command = "yarn build"
+  publish = "dist"
+
+[context.production.environment]
+  VITE_API_BASE_URL = "https://q-hackathon-2024.onrender.com"
+
+[context.deploy-preview.environment]
+  VITE_API_BASE_URL = "https://q-hackathon-2024.onrender.com"

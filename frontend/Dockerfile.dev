@@ -9,5 +9,4 @@ RUN yarn install
 
 COPY ./ ./
 
-RUN yarn build --mode production
-CMD ["yarn", "preview"]
+CMD ["yarn", "dev"]

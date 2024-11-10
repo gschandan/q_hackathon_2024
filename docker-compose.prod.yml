@@ -6,11 +6,7 @@ services:
   frontend:
     build:
       context: ./frontend
-      dockerfile: Dockerfile.dev
     environment:
-      - NODE_ENV=development
+      - NODE_ENV=production
     ports:
       - "8000:8000"
-    volumes:
-      - ./frontend:/frontend
-      - /frontend/node_modules
