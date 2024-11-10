@@ -5,7 +5,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:8000", "extraordinary-kringle-ade900.netlify.app"],
+    allow_origins=["http://localhost:8000", "https://extraordinary-kringle-ade900.netlify.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
